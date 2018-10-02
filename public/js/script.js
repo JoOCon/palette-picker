@@ -1,6 +1,11 @@
-import $ from 'jquery';
+const randomColorGenerator = () => ('#' + '0123456789abcdef'.split('').map(
+  (hexvalue, index, hexValuesArray) => {
+    let randomIndex = Math.floor(Math.random() * 16)
+    return index > 5 ? null : hexValuesArray[randomIndex]
+  }).join('')
+);
 
-
-const randomColorGenerator = () => ('#' + '0123456789abcdef'.split('').map(function (v, i, a) {
-  return i > 5 ? null : a[Math.floor(Math.random() * 16)]
-}).join(''));
+$('.generate-colors').click(() => {
+  let randomColor = randomColorGenerator()
+  $('.color-1').css("background-color", `${randomColor}`);
+});

@@ -5,7 +5,9 @@ const randomColorGenerator = () => ('#' + '0123456789abcdef'.split('').map(
   }).join('')
 );
 
-$('.generate-colors').click(() => {
-  let randomColor = randomColorGenerator()
-  $('.color-1').css("background-color", `${randomColor}`);
+$(window).keydown((e) => {
+  if (e.which === 18) {
+    let randomColor = randomColorGenerator()
+    $('.color-1').css("background-color", `${randomColor}`);
+  }
 });

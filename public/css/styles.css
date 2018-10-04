@@ -37,6 +37,7 @@ header {
   flex-grow: 1;
   margin: 0 .5em;
   border: .15em solid rgba(22, 22, 22, 1);
+  border-radius: .5em;
 }
 
 .color-1 {

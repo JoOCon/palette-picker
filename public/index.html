@@ -5,26 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Color Sphere</title>
+  <link href="https://fonts.googleapis.com/css?family=K2D:100,200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
-    <h1 class='main-title'>Color Sphere</h1>
+    <h1 class='main-title'>Color Palette</h1>
   </header>
-  <main class='circle-container'>
-    <section class='color-sphere'>
-      <div class='color-1'>color1</div>
-      <div class='color-2'>color2</div>
-      <div class='color-3'>color3</div>
-      <div class='color-4'>color4</div>
-      <div class='color-5'>color5</div>
-      <button class='generate-colors'>New Sphere</button>
+  <main class='main-container'>
+    <section class='color-palette'>
+      <div class='main-color color-1'>color1</div>
+      <div class='main-color color-2'>color2</div>
+      <div class='main-color color-3'>color3</div>
+      <div class='main-color color-4'>color4</div>
+      <div class='main-color color-5'>color5</div>
     </section>
+    <aside class='info-section'>
+      <h2>Current Colors, Press ALT Key For New Palette</h2>
+      <section class='current-colors'>
+        <div class='color-1'>color1</div>
+        <div class='color-2'>color2</div>
+        <div class='color-3'>color3</div>
+        <div class='color-4'>color4</div>
+        <div class='color-5'>color5</div>
+      </section>
+      <section class='user-input-section'>
+        <h3>Palette info</h3>
+        <form class='user-input-form'>
+          <input class='group-name' placeholder='Enter New or Existing Group'/>
+          <input class='palette-name' placeholder='Enter New Palette Name'/>
+          <button>Save</button>
+        </form>
+      </section>
+      <section class='palette-group-display'>
+        <h1>some title</h1>
+        <div>a color</div>
+        <div>a color</div>
+        <div>a color</div>
+        <div>a color</div>
+        <div>a color</div>
+      </section>
+    </aside>
   </main>
-  <aside>
-
-  </aside>
 </body>
   <script src="./js/script.js"></script>
 </html>
